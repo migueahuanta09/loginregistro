@@ -1,5 +1,4 @@
-package com.example.registro
-
+package com.tuapp.packageName
 
 import android.content.Context
 import android.content.Intent

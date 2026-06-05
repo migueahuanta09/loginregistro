@@ -1,4 +1,4 @@
-package com.tuapp.packageName
+package com.example.registro
 
 import android.content.Context
 import android.content.Intent
@@ -72,9 +72,9 @@ class Login : AppCompatActivity() {
             sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
 
             Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-            // Aquí puedes redirigir a tu actividad principal
-            // val intent = Intent(this, MainActivity::class.java)
-            // startActivity(intent)
+            // Redirigir a MainActivity
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
             finish()
         } else {
             Toast.makeText(this, "Correo o contraseña incorrectos", Toast.LENGTH_SHORT).show()
